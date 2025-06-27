@@ -1,0 +1,22 @@
+class Curso:
+    def __init__(self):
+        self.asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+        self.notas = {}
+
+    def ingresar_notas(self):
+        print("Ingrese la nota para cada asignatura:")
+        for asignatura in self.asignaturas:
+            nota = input(f"{asignatura}: ")
+            self.notas[asignatura] = nota
+
+    def mostrar_resultados(self):
+        print("\nResumen de notas:")
+        for asignatura in self.asignaturas:
+            print(f"En {asignatura} has sacado {self.notas[asignatura]}")
+
+# Crear un objeto del curso
+mi_curso = Curso()
+
+# Ejecutar métodos
+mi_curso.ingresar_notas()
+mi_curso.mostrar_resultados()
