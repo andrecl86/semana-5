@@ -1,0 +1,11 @@
+# Definimos los vectores como listas
+vector1 = [1, 2, 3]
+vector2 = [-1, 0, 2]
+
+# Calculamos el producto escalar
+producto_escalar = 0
+for i in range(len(vector1)):
+    producto_escalar += vector1[i] * vector2[i]
+
+# Mostramos el resultado
+print("El producto escalar de los vectores es:", producto_escalar)
