@@ -1,0 +1,13 @@
+class Curso:
+    def __init__(self):
+        self.asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+
+    def mostrar_asignaturas(self):
+        for asignatura in self.asignaturas:
+            print(f"Yo estudio {asignatura}")
+
+# Crear un objeto de la clase Curso
+mi_curso = Curso()
+
+# Llamar al método para mostrar las asignaturas
+mi_curso.mostrar_asignaturas()
