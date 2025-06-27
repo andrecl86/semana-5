@@ -1,0 +1,20 @@
+class LoteriaPrimitiva:
+    def __init__(self):
+        self.numeros = []
+
+    def ingresar_numeros(self):
+        print("Introduce los números ganadores de la lotería primitiva:")
+        for i in range(6):  # Suponiendo que se ingresan 6 números
+            numero = int(input(f"Ingrese el número {i+1}: "))
+            self.numeros.append(numero)
+
+    def mostrar_ordenados(self):
+        ordenados = sorted(self.numeros)
+        print("Números ganadores ordenados de menor a mayor:", ordenados)
+
+# Crear objeto de la clase
+loteria = LoteriaPrimitiva()
+
+# Llamar a los métodos
+loteria.ingresar_numeros()
+loteria.mostrar_ordenados()
