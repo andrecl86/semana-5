@@ -1,0 +1,20 @@
+class AnalizadorPrecios:
+    def __init__(self, precios):
+        self.precios = precios
+
+    def obtener_menor_precio(self):
+        return min(self.precios)
+
+    def obtener_mayor_precio(self):
+        return max(self.precios)
+
+    def mostrar_resultados(self):
+        print("El precio menor es:", self.obtener_menor_precio())
+        print("El precio mayor es:", self.obtener_mayor_precio())
+
+# Crear el objeto con la lista de precios
+precios_lista = [50, 75, 46, 22, 80, 65, 8]
+analizador = AnalizadorPrecios(precios_lista)
+
+# Mostrar los resultados
+analizador.mostrar_resultados()
